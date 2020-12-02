@@ -1,0 +1,14 @@
+extends layout
+
+block pageContent
+    - var holidays = getHolidays();
+    h1 US Holidays This Year:
+    table#holi
+        tr.holiRow
+            th.holiCell Date
+            th.holiCell Name
+        - for(let i = 0; i < holidays.length; i++){
+        tr.holiRow
+            td.holiCell=holidays[i].date
+            td.holiCell=holidays[i].name
+        - }

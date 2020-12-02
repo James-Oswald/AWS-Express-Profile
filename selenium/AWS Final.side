@@ -1,0 +1,381 @@
+{
+  "id": "f0dfb693-0f93-4c36-8c15-d81f6e13eebb",
+  "version": "2.0",
+  "name": "AWS Final",
+  "url": "http://ec2-3-138-199-74.us-east-2.compute.amazonaws.com",
+  "tests": [{
+    "id": "ed1e19e9-c368-4d48-86a9-6cc6a9ae8b5e",
+    "name": "Login",
+    "commands": [{
+      "id": "85af249d-8671-438e-9895-0f503a8b88c9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a5e9aaa-1750-48f3-bbe8-60fbf0f59684",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1426x805",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3624984d-f889-43bf-805c-533577feb174",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e340a1ca-c20b-42f2-9f32-bdcdeb397943",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c26d91ea-ac8f-4013-849f-8da633abc0cb",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "James"
+    }, {
+      "id": "f104ff72-bb5d-4726-9380-737e581f99a0",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Teddyt11"
+    }, {
+      "id": "41a3d76f-57ae-41d0-bdd5-453cd37fe229",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@onclick='login()']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a7efd80-624c-4671-80d9-2e193ab34eca",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Edit",
+      "targets": [
+        ["linkText=Edit", "linkText"],
+        ["css=.active > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Edit')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/edit')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05006486-e70a-4871-b0ae-a8c0a7bb87b3",
+      "comment": "",
+      "command": "close",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8ab2a272-759a-4535-86c3-c4bd3f364e1e",
+    "name": "Edit Profile",
+    "commands": [{
+      "id": "8666a657-9c7d-41be-a62d-fe2dad3a143a",
+      "comment": "",
+      "command": "open",
+      "target": "http://ec2-3-138-199-74.us-east-2.compute.amazonaws.com/edit",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e209b8a-64ca-4633-95cb-deed5ac2a808",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1426x805",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34349a72-5b3b-4643-ab46-e5b991b751c7",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Math.random(). toString(36).substring(2,12)",
+      "targets": [],
+      "value": "randomString"
+    }, {
+      "id": "bc18be78-c9de-44c5-919b-8e2b2be2c02e",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "803f1cbd-7e22-4806-833f-8fbe0ea4c286",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "TestUser${randomString}"
+    }, {
+      "id": "15636db4-be37-420b-88f4-4c745a0b5e37",
+      "comment": "",
+      "command": "click",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["name=description", "name"],
+        ["css=#description", "css:finder"],
+        ["xpath=//input[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f482d3dc-d4f7-498d-95c4-64902c983304",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["name=description", "name"],
+        ["css=#description", "css:finder"],
+        ["xpath=//input[@id='description']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "TestDescription${randomString}"
+    }, {
+      "id": "94cc06cf-d747-4064-ab4b-37f11db2ec85",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "907c72dc-4363-4790-a2be-b1e871d4eb49",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[3]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "003e4c0c-e610-4089-99a9-ebd41b898807",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='content']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'TestUserr7lmoijtoc')]", "xpath:innerText"]
+      ],
+      "value": "TestUser${randomString}"
+    }, {
+      "id": "49521748-00a4-4dd9-943b-412099f71f41",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//div[@id='content']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'TestDescription')]", "xpath:innerText"]
+      ],
+      "value": "TestDescription${randomString}"
+    }, {
+      "id": "b10b641c-e37a-4be9-955a-1a1e352fdcfc",
+      "comment": "",
+      "command": "close",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "714ee26b-0f9e-4032-9c89-ec369e4c5da6",
+    "name": "Logout",
+    "commands": [{
+      "id": "ee06850e-7505-4383-a09c-37b6a2c7d9e8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01159413-a4a6-401b-8887-6e0cba0862b1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1426x805",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f58c3a3-36d7-4555-a5a5-de09f604eb21",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log Out",
+      "targets": [
+        ["linkText=Log Out", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log Out')]", "xpath:link"],
+        ["xpath=//a[@onclick='logout()']", "xpath:attributes"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8279df73-de2a-4159-8848-ae3658954a7f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a702e2db-ad3d-4f90-85e5-d1a58d8394c9",
+      "comment": "",
+      "command": "close",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c00346f3-ee85-48e0-adbf-86ec7ae22339",
+    "name": "Check Holidays",
+    "commands": [{
+      "id": "7ae80e3f-fd93-4448-ab0c-169ed62263be",
+      "comment": "",
+      "command": "open",
+      "target": "http://ec2-3-138-199-74.us-east-2.compute.amazonaws.com/holidays",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b96649c-7174-4347-ac44-d0ad03880259",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1426x805",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8b713f1-2c59-4039-972d-83f0d62ac29a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=holi",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "e23b6576-697f-4517-b25e-a3cd1014941e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.getElementById(\"holi\").children[0].children.length",
+      "targets": [],
+      "value": "numHolidays"
+    }, {
+      "id": "e0c22836-9229-4ecd-8bbf-b3a90f06bd0d",
+      "comment": "",
+      "command": "assert",
+      "target": "numHolidays",
+      "targets": [],
+      "value": "11"
+    }, {
+      "id": "702188d6-6c85-4935-bc12-3f8aa96d1c36",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/')])[3]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f2a9602-d72a-457e-8800-d1c0288ebfe7",
+      "comment": "",
+      "command": "close",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3b9d1de2-847b-4522-9f8d-8c3e1e962483",
+    "name": "Test Site",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ed1e19e9-c368-4d48-86a9-6cc6a9ae8b5e", "8ab2a272-759a-4535-86c3-c4bd3f364e1e", "c00346f3-ee85-48e0-adbf-86ec7ae22339", "714ee26b-0f9e-4032-9c89-ec369e4c5da6"]
+  }, {
+    "id": "89d996cb-b3a2-4238-8555-15172ee452e9",
+    "name": "LoginLogout",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ed1e19e9-c368-4d48-86a9-6cc6a9ae8b5e", "714ee26b-0f9e-4032-9c89-ec369e4c5da6"]
+  }],
+  "urls": ["http://ec2-3-138-199-74.us-east-2.compute.amazonaws.com/", "http://ec2-3-138-199-74.us-east-2.compute.amazonaws.com/edit", "http://ec2-3-138-199-74.us-east-2.compute.amazonaws.com/holidays"],
+  "plugins": []
+}
